@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dracula.css">
+    <link rel="stylesheet" href="css/responsive">
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <div class="logo">
+                <img src="img/Logo.svg" alt="Logo Alura Dev">
+            </div>
+            <div class="pesquisa">
+                <form>
+                    <input class="busca" type="search" name="busca" id="busca" placeholder="   Faça sua busca aqui">
+                </form>
+            </div>
+            <div class="profile">
+                <button>
+                    <img src="img/camila.jpg" alt="">
+                    <h2>Dev Camila</h2>
+                </button>
+            </div>
+            <div class="lupa">
+                <img src="img/lupa.svg" alt="ícone lupa">
+            </div>
+            <div class="menu-hamburger">
+                <img src="img/menu.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="conteudo">
+        <nav class="menu">
+            <h1>Menu</h1>
+            <div class="menu-editor">
+                <a href="#editor" class="botao-editor">
+                    <button><img class="icon-editor" src="img/icon.svg"></button>
+                </a>
+                <h2>Editor de Código</h2>
+            </div>
+            <div class="menu-comunidade">
+                <a href="comu.html" class="botao-comunidade">
+                    <button><img class="icon-comu" src="img/icon2.svg"></button>
+                </a>
+                <h2>Comunidade</h2>
+            </div>
+        </nav>
+
+        <main>
+            <div class="area-editor">
+                <div class="fundo-editor">
+                    <div class="editor" id="editor">
+                        <div class="icones">
+                            <img src="img/mac/Ellipse 1.svg" alt="">
+                            <img src="img/mac/Ellipse 2.svg" alt="">
+                            <img src="img/mac/Ellipse 3.svg" alt="">
+                        </div>
+                        <div class="texto">
+                            <code class="preview hljs" contenteditable="true" aria-label="editor"></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="sintaxe">
+                <button type="button" class="botao-high">
+                    <h2>Visualizar com o highlight</h2>
+                </button>
+            </nav>
+        </main>
+
+        <div class="projeto">
+            <h1>Seu Projeto</h1>
+            <nav>
+                <input class="nome-projeto" type="text" placeholder=" Nome do seu projeto">
+                <textarea wrap="hard" class="descricao-projeto" type="text" placeholder=" Descrição do seu projeto"
+                    cols="30" rows="10"></textarea>
+            </nav>
+
+            <h1>Personalização</h1>
+            <div class="personalizacao">
+                <select name="linguagem" id="linguagem" class="linguagem">
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+                <div class="cor-fundo1">
+                    <input type="color" class="cor-fundo" name="cor-fundo" id="cor-fundo" value="#A48556">
+                    <button class="mudar-fundo" type="button" onclick="chBackcolor01();">
+                        <h2>Mudar Cor Fundo</h2>
+                    </button>
+                </div>
+                <div class="cor-fundo2">
+                    <input type="color" name="cor-editor" id="cor-editor" class="cor-editor">
+                    <button class="mudar-editor" type="button" onclick="chBackcolor();">
+                        <h2>Mudar Cor Editor</h2>
+                    </button>
+                </div>
+            </div>
+            <div class="save">
+                <button type="button" class="salvar">
+                    <h4>Salvar Projeto na Comunidade</h4>
+                </button>
+            </div>
+            <div class="save-png">
+                <button type="button" class="salvar-png">
+                    <h4>Salvar Projeto como PNG</h4>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
