@@ -490,5 +490,9 @@ option {
     pointer-events:none;
 }
 
-
+.comunidade {
+width: 95%;
+display: flex;
+flex-direction: column;
+}
 
