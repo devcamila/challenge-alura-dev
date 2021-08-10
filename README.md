@@ -12,7 +12,7 @@ Na minha versão, é possivel mudar a cor do fundo e borda do editor, ter a visu
 ---
 <div align="center">
 
-➡ [***Visite o projeto aqui***](https://ping-pong-game.devcamila.repl.com) ⬅ 
+➡ [***Visite o projeto aqui***](https://challenge-alura-dev.vercel.app/) ⬅ 
 
 [![90j5p.png](https://i.im.ge/2021/08/11/90j5p.png)](https://im.ge/i/90j5p)
 
