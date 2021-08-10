@@ -75,6 +75,10 @@ body {
     pointer-events: none;
 }
 
+.profile-user {
+    text-decoration: none;
+}
+
 /*Fontes*/
 h1 {
     font-family: 'Inter';

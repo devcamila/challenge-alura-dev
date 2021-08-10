@@ -50,10 +50,8 @@ function chBackcolor(color) {
 */
 
 
-botaoPng.addEventListener('click', () => {
-    const canvas = document.querySelector(".fundo-editor");
-    console.log('click');
-    domtoimage.toBlob(canvas)
+botaoPng.addEventListener('click', () => {   
+    domtoimage.toBlob(document.querySelector(".fundo-editor"))
         .then(function (blob) {
             saveAs(blob, "projeto.png");
         })
